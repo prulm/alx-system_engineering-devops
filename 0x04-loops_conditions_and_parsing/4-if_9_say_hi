@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
-# displays Holberton School 10 times but for the 9th iteration, displays Holberton School and then Hi on a new line
-
-COUNTER=0
-while [ "$COUNTER" -lt 10 ]; do
-	echo "Holberton School"
-	if [ "$COUNTER" -eq 8 ]
-	then
-	    echo "Hi"
-	fi
-	let COUNTER=COUNTER+1
+#prints a string 10 times
+x=1
+while [ $x -ne 11 ]
+do
+  if [ $x -eq 9 ]
+  then
+    echo "Hi"
+  else
+    echo "Holberton School"
+  fi
+  x=$(( x + 1 ))
 done
